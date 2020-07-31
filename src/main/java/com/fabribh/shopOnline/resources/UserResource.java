@@ -1,7 +1,7 @@
-package com.fabribh.courseSpring.resources;
+package com.fabribh.shopOnline.resources;
 
-import com.fabribh.courseSpring.entities.User;
-import com.fabribh.courseSpring.services.UserService;
+import com.fabribh.shopOnline.entities.User;
+import com.fabribh.shopOnline.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

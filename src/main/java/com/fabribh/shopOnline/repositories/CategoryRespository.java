@@ -1,6 +1,6 @@
-package com.fabribh.courseSpring.repositories;
+package com.fabribh.shopOnline.repositories;
 
-import com.fabribh.courseSpring.entities.Category;
+import com.fabribh.shopOnline.entities.Category;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface CategoryRespository extends JpaRepository<Category, Long> {

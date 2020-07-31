@@ -1,4 +1,4 @@
-package com.fabribh.courseSpring;
+package com.fabribh.shopOnline;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

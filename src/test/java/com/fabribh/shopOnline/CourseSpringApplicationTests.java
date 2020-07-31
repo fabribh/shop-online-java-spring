@@ -1,4 +1,4 @@
-package com.fabribh.courseSpring;
+package com.fabribh.shopOnline;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

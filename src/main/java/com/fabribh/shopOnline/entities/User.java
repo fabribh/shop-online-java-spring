@@ -1,4 +1,4 @@
-package com.fabribh.courseSpring.entities;
+package com.fabribh.shopOnline.entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 

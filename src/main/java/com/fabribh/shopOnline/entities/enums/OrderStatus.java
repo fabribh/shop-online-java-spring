@@ -1,4 +1,4 @@
-package com.fabribh.courseSpring.entities.enums;
+package com.fabribh.shopOnline.entities.enums;
 
 public enum OrderStatus {
     WAITING_PAYMENT(1),

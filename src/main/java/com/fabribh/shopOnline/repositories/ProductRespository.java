@@ -1,6 +1,6 @@
-package com.fabribh.courseSpring.repositories;
+package com.fabribh.shopOnline.repositories;
 
-import com.fabribh.courseSpring.entities.Product;
+import com.fabribh.shopOnline.entities.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface ProductRespository extends JpaRepository<Product, Long> {

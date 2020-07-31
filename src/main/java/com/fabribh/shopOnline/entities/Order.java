@@ -1,6 +1,6 @@
-package com.fabribh.courseSpring.entities;
+package com.fabribh.shopOnline.entities;
 
-import com.fabribh.courseSpring.entities.enums.OrderStatus;
+import com.fabribh.shopOnline.entities.enums.OrderStatus;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 import javax.persistence.*;

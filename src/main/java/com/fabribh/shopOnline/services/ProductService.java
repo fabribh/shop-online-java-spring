@@ -1,7 +1,7 @@
-package com.fabribh.courseSpring.services;
+package com.fabribh.shopOnline.services;
 
-import com.fabribh.courseSpring.entities.Product;
-import com.fabribh.courseSpring.repositories.ProductRespository;
+import com.fabribh.shopOnline.entities.Product;
+import com.fabribh.shopOnline.repositories.ProductRespository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

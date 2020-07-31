@@ -1,14 +1,14 @@
-package com.fabribh.courseSpring.config;
+package com.fabribh.shopOnline.config;
 
-import com.fabribh.courseSpring.entities.Category;
-import com.fabribh.courseSpring.entities.Order;
-import com.fabribh.courseSpring.entities.Product;
-import com.fabribh.courseSpring.entities.User;
-import com.fabribh.courseSpring.entities.enums.OrderStatus;
-import com.fabribh.courseSpring.repositories.CategoryRespository;
-import com.fabribh.courseSpring.repositories.OrderRespository;
-import com.fabribh.courseSpring.repositories.ProductRespository;
-import com.fabribh.courseSpring.repositories.UserRespository;
+import com.fabribh.shopOnline.entities.Category;
+import com.fabribh.shopOnline.entities.Order;
+import com.fabribh.shopOnline.entities.Product;
+import com.fabribh.shopOnline.entities.User;
+import com.fabribh.shopOnline.entities.enums.OrderStatus;
+import com.fabribh.shopOnline.repositories.CategoryRespository;
+import com.fabribh.shopOnline.repositories.OrderRespository;
+import com.fabribh.shopOnline.repositories.ProductRespository;
+import com.fabribh.shopOnline.repositories.UserRespository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Configuration;
@@ -46,6 +46,15 @@ public class TestConfig implements CommandLineRunner {
         Product p5 = new Product(null, "Rails for Dummies", "Cras fringilla convallis sem vel faucibus.", 100.99, "");
 
         categoryRespository.saveAll(Arrays.asList(cat1, cat2, cat3));
+        productRespository.saveAll(Arrays.asList(p1, p2, p3, p4, p5));
+
+        p1.getCategories().add(cat2);
+        p2.getCategories().add(cat1);
+        p2.getCategories().add(cat3);
+        p3.getCategories().add(cat3);
+        p4.getCategories().add(cat3);
+        p5.getCategories().add(cat2);
+
         productRespository.saveAll(Arrays.asList(p1, p2, p3, p4, p5));
 
         User u1 = new User(null, "Maria Brown", "maria@gmail.com", "98888888888", "123456");

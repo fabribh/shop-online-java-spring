@@ -1,9 +1,7 @@
-package com.fabribh.courseSpring.services;
+package com.fabribh.shopOnline.services;
 
-import com.fabribh.courseSpring.entities.Category;
-import com.fabribh.courseSpring.entities.User;
-import com.fabribh.courseSpring.repositories.CategoryRespository;
-import com.fabribh.courseSpring.repositories.UserRespository;
+import com.fabribh.shopOnline.entities.Category;
+import com.fabribh.shopOnline.repositories.CategoryRespository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
