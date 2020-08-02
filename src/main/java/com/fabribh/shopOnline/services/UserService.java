@@ -2,6 +2,7 @@ package com.fabribh.shopOnline.services;
 
 import com.fabribh.shopOnline.entities.User;
 import com.fabribh.shopOnline.repositories.UserRespository;
+import com.fabribh.shopOnline.services.exceptions.ResourceNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -20,7 +21,7 @@ public class UserService {
 
     public User findById(Long id) {
         Optional<User> user = respository.findById(id);
-        return user.get();
+        return user.orElseThrow(() -> new ResourceNotFoundException(id));
     }
 
     public User insert(User obj) {
